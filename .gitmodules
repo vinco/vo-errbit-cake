@@ -1,0 +1,3 @@
+[submodule "errbit"]
+	path = errbit
+	url = git@github.com:vinco/errbit-php.git
