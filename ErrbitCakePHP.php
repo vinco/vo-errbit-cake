@@ -36,6 +36,10 @@ class ErrbitCakePHP extends ErrorHandler{
         switch ($code) {
             case E_USER_NOTICE:
             case E_NOTICE:
+                if( !self::$settings['showNotice'] ){
+                    $sendNotify = false;
+                    break;
+                }
                 $exception = new Errbit_Errors_Notice($message, $file, $line, debug_backtrace());
                 break;
 
