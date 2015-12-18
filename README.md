@@ -23,6 +23,7 @@ ErrbitCakePHP::$settings = array(
     'environment_name' => 'YOUR_ENVIRONMENT_NAME',
     'showErrors' => true,
     'showWarnigns' => true
+    'showNotice' => true
 );
 Configure::write('Error.handler', 'ErrbitCakePHP::handleError');
 ```
