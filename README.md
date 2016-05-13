@@ -11,7 +11,7 @@ git clone --recursive git@github.com:vinco/vo-errbit-cake.git
 
 * In app/Config/bootstrap.php
 
-```
+```php
 /*
  * Errbit CakePHP
  */
@@ -22,7 +22,7 @@ ErrbitCakePHP::$settings = array(
     'port' => 'YOUR_PORT',
     'environment_name' => 'YOUR_ENVIRONMENT_NAME',
     'showErrors' => true,
-    'showWarnigns' => true
+    'showWarnigns' => true,
     'showNotice' => true
 );
 Configure::write('Error.handler', 'ErrbitCakePHP::handleError');
